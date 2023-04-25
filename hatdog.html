@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Variables and Operators</title>
+</head>
+<body>
+	<input id="input" type="number" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+	<p> <span id="outputcm"></span></p>
+	<script>
+		function LengthConverter(valNum) {
+document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+	</script>
+</body>
+</html>
